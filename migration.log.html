@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Migration log file</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		body {
+			background: #1a242a;
+			color: #ececec;
+			margin: 20px;
+			font-size: 14px;
+			font-family: 'Courier New', Courier, monospace;
+			counter-reset: lognum;
+			tab-size: 4;
+		}
+		
+		.m, .w, .e {
+			padding: 3px;
+			white-space: pre-wrap;
+			line-height: 16px;
+		}
+		
+		.m:before, .w:before, .e:before {
+			counter-increment: lognum;
+			content: counter(lognum) ". ";
+		}
+		
+		.m {
+			color: #ececec;
+		}
+		
+		.w {
+			background-color: #FCF8E3;
+			color: #8A6D3B;
+		}
+		
+		.e {
+			background-color: #d64500;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+<div class="m">Start migration to version "2.19.0.3"</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_d3d11.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_d3d11_debug.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_d3d12_dxc.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_vk.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_gl_debug.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/shader_gl.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/unigine.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/editor.cache</div>
+<div class="m"> Remove F:/Unigine Projects/Kate/KursovoiProject/data/d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache</div>
+<div class="m"> Remove directory F:/Unigine Projects/Kate/KursovoiProject/data/.thumbnails</div>
+<div class="m"> Remove directory F:/Unigine Projects/Kate/KursovoiProject/data/.cache_textures</div>
+<div class="m">update materials ...</div>
+<div class="m">update material graphs ...</div>
+<div class="m">migrate properties ...</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/box.mesh.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/box_0.mesh.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/box_0_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/box_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/KursovoiProject.world — копия.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/KursovoiProject.world.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/PressWorkAnim.world.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/26ea42c1757a774df93cec2154cc4bf3bc7d718a.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/3643d9db4cc45eec9aca8de5709ba720f6a7369a.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/4934c5a936126aec272a876355c598022fd8c470.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/5ed89b3ff7bb6086388e5be935317ea77abe366e.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/81bedd34956f0141d9186b5491b0b69d1d0835d9.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/9ec9aae32de9f2160b3e022d5d8739eb6bd16982.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/aeba587da03e49d376990bdd63b0d753bb8fc836.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/c018b0179b286aa4de97f277bc34733f8ac0ad78.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/d2a3651e8c5fab9b24332c3e4c899cc8f158c46b.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/bake_lighting/shadows/df6f0a35eb017673cfc031956acacca60aa68ece.texture.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/crosshair.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/ModelAnimation.prop.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/SelMat.upackage.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/sphere.mesh.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/sphere_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/ToolTip.prop.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/ToolTipGUI.prop.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/ComponentSystem/ToolTipXML.ui.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.boot.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.config.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.controls.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.user.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/editor.boot.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/CustomMaterials/SelHighlight.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/CustomMaterials/screen_space/filter_selection.frag.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/CustomMaterials/screen_space/sphere_mesh_base_0.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/CustomMaterials/screen_space/sphere_mesh_base_1.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/CustomMaterials/screen_space/vr_post_filter_selection.basemat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/Politech.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/Гидравлический_брикетировочный_пресс_Анимация_Разборки5_2.fbx.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/указатель уровня масла.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/Шильдик.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/ шланговый фитинг.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/iso 4034 Гайка с резьбой m36.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/iso 4762 Винты m10x60.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/iso 4762 Винты m12x20.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/iso 4762 Винты М16х140.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/iso 7412 Болты m16x45.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/table.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Болтики.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/большая кнопка основание.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/большая кнопка основная часть.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Буферное уплотнение (2 кольца).mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/гидравлический шланговый фитинг.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/горизонт. часть стола (рабоч.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Грязесъемное кольцо.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/зеленая кнопка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Кнопка еще одна.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Красная кнопка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/крышка двигателя.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Крышка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Металл .001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Металл .mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/металл насос.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Направляющая.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Направляющее кольцо.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/основание гидропресса.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/основание у самой большой кнопки.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/основной корпус.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/панель манометра.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/показатель уровня масла.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/поршень.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/пресс.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Приборка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/рабочий стол.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/рабочий цилиндр.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/рабочий цилиндр.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/распределитель.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/ребра жёсткости рабочего стола.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/ребра жесткости стоек.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Резина насос.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Рычаги крепления стола.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Салатовая кнопка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/самая большая красная штука.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/стойки.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Таблица.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/у насоса.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Уплотнение штока.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Фланец.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/Черный Металл.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/шланг1.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/шланг2.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/шток.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/электр коробка.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Model Press/materials/электродвигатель.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/back_door.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/blueLocker.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/body_txt.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/box.mesh.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/boxes2.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/box_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/Cardboard_box_roughness.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/display_txt.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/front_wall.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/GAS Canister_Base_Color.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/greenLocker.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/indicator of pumping station.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/keyboard_txt.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/klvgdpko.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/my_window.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/padlockBody.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_ConcreteFloors0055_3_S.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_Concrete_Base4_1x1_1K.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_MetalRollup0145_S.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_Pavement_MedievalFloor2_2.6x2.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_WoodFine0058_15_S.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_WoodRough0106_1_seamless_S.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/MyMaterials/TexturesCom_Wood_PlanksRough1Base_2x2_512.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/uploads_files_3378522_ONLY+GRAGE.fbx.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/04___default.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/1.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/2.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/bagcolordark.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/bagmetal.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blackgloss.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn1.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn2.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn3.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn4.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn5.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn6.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn8.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/blinn9.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/brake disc.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/brake disc.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/brakecaliper.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/cabinet_material.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/charcoal.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/color_b24.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/countertop_material.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/dressshoecolor.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/gas canister.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/glass_material.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/handle_material.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/hidden_material.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/initialshadinggroup.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/lampshade_material.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/lamp_base_material.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #100.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #101.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #102.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #102.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #103.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #103.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #104.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #105.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #106.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #106.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #107.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #107.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #108.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #108.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #109.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #109.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #110.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #111.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #116.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #116.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #117.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #117.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #118.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #119.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #98.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material #99.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.017.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.018.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.019.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.022.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.023.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.024.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.025.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.026.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.027.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.028.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.029.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.030.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.031.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.032.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.033.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.034.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.035.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.036.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.037.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.038.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/material.039.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/metallic.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/paint.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/redgloss.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/rubber - soft.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/rust.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/tire.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/tyre.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/velg.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/white ceramic.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/window_material.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/антикрыло.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/зеркало фар.002.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/зеркало фар.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/карбон+лак.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/краска кузов 2.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/краска.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/мат фар.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/отражатель фар.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/пластик арки.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/пластик внутр.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/пластик чер.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Свет диод крас.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Свет диод.001 1.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Свет диод.003.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Свет диод.004.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Свет диод.005.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/стекло внеш.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/трасстекло.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/чермат.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Room 1/materials/Черный.001.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/shadesrs/shaders/vr_controller.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/shadesrs/shaders/vr_controller_0.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/shadesrs/shaders/screen_space/filter_selection.frag.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/shadesrs/shaders/screen_space/vr_post_filter_selection.basemat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball.fbx.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball_a.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball_alb.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball_mat.mat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball_n.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_material_ball/material_ball_sh.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_extreme.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_high.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_low.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_medium.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_ultra.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_virtual_reality.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/blueLocker_Diffuse.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/blueLocker_Glossiness.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/blueLocker_Normal.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/body_txt.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/Cardboard_boxs_albedo.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/Cardboard_boxs_normal.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/Cardboard_box_roughness.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/display_txt.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/GAS Canister_Base_Color.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/GAS Canister_Metallic.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/GAS Canister_Normal.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/GAS Canister_Roughness.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/greenLocker_Glossiness.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/keyboard_txt.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/padlockBody_Normal.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/padlockShackle_Normal.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_ConcreteFloors0055_3_S.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Concrete_Base4_1x1_1K_albedo.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Concrete_Base4_1x1_1K_ao.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Concrete_Base4_1x1_1K_height.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Concrete_Base4_1x1_1K_roughness.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_MetalRollup0145_S.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Pavement_MedievalFloor2_2.6x2.6_1K_albedo.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Pavement_MedievalFloor2_2.6x2.6_1K_ao.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Pavement_MedievalFloor2_2.6x2.6_1K_height.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Pavement_MedievalFloor2_2.6x2.6_1K_normal.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Pavement_MedievalFloor2_2.6x2.6_1K_roughness.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_WoodFine0058_15_S.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_WoodRough0106_1_seamless_S.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Wood_PlanksRough1Base_2x2_512_albedo.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Wood_PlanksRough1Base_2x2_512_normal.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/TexturesCom_Wood_PlanksRough1Base_2x2_512_roughness.tif.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/белая кирпичная стена.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/кирпичная стена.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/окно.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/оранжевая кирпичная стена.png.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/Texture/первая дверь.jpg.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/render_settings/template_virtual_reality.render.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/shaders/vr_controller.mgraph.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/shaders/screen_space/filter_selection.frag.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/shaders/screen_space/filter_selection_0.frag.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/shaders/screen_space/vr_post_filter_selection.basemat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/shaders/screen_space/vr_post_filter_selection_0.basemat.meta"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.boot"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.controls"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/default.user"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/configs/editor.boot"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/.runtimes/2b/2bdf2610177e422f32ce09c2dcbabe396d465244.node"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/.runtimes/38/38effdb195d1d01bde012eef7b2369ff9c353d45.node"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/.runtimes/e5/e5f2be58ef97116d180899314e95edb86d89b699.node"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/KursovoiProject.world"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/PressWorkAnim.world"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_extreme.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_high.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_low.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_medium.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_ultra.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/template_assets/template_render_settings/template_virtual_reality.render"</div>
+<div class="m">upgrading "F:/Unigine Projects/Kate/KursovoiProject/data/vr_template/render_settings/template_virtual_reality.render"</div>
+</body>
+</html>

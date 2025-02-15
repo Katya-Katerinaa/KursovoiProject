@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.LoadingScreen.setImage(Unigine.Ptr{Unigine.Image})">
+			<summary>
+			Sets an image for a custom loading screen.
+			</summary> 
+			<param name="image"> Image smart pointer to an image to be used as a custom loading screen. </param> 
+		</member>
+		<member name="M:Unigine.LoadingScreen.getImage(Unigine.Ptr{Unigine.Image}) const">
+			<summary>
+			Returns the current image for a custom loading screen.
+			</summary> 
+			<param name="image"> Image used as a custom loading screen. </param> 
+		</member>
+		<member name="M:Unigine.LoadingScreen.renderInterface">
+			<summary>
+			Renders a static loading screen. Such a screen does not display any progress.
+			</summary>  
+		</member>
+		<member name="M:Unigine.LoadingScreen.render">
+			<summary>
+			Renders the loading screen in the current progress state and with the current stage message.
+			</summary>  
+		</member>
+		<member name="M:Unigine.LoadingScreen.render(int)">
+			<summary>
+			Renders a custom loading screen in a given progress state. Use this function in a loop to create a gradual change between the initial (upper opaque part) and the final states (bottom transparent part) of the loading screen texture.
+			</summary> 
+			<param name="progress"> Progress of alpha blending between 2 screens stored in the texture. The value in range [0;100] sets an alpha channel threshold, according to which pixels from the initial (opaque) or final (transparent) screen in the texture are rendered. By the value of 0, the initial screen is loaded. By the value of 100, the final screen is loaded. </param> 
+		</member>
+		<member name="M:Unigine.LoadingScreen.render(int,char)">
+			<summary>
+			Renders a custom loading screen in a given progress state and prints a given message. Use this function in a loop to create a gradual change between the initial (upper opaque part) and the final states (bottom transparent part) of the loading screen texture, while printing a custom loading stage.
+			</summary> 
+			<param name="progress"> Progress of alpha blending between 2 loading screens stored in the texture. The value in range [0;100] sets an alpha channel threshold, according to which pixels from the initial (opaque) or final (transparent) loading screen in the texture are rendered. By the value of 0, the initial screen is loaded. By the value of 100, the final screen is loaded. </param>
+			<param name="message"> message to print representing the loading stage. </param> 
+		</member>
+		<member name="M:Unigine.LoadingScreen.renderForce">
+			<summary>
+			Renders the loading screen regardless of whether the manual rendering is allowed or not.
+			</summary>  
+		</member>
+		<member name="M:Unigine.LoadingScreen.renderForce(char)">
+			<summary>
+			Renders the loading screen regardless of whether the manual rendering is allowed or not and prints a given message.
+			</summary> 
+			<param name="message"> message to print that represents the loading stage. </param> 
+		</member>
+	</members>
+</doc>

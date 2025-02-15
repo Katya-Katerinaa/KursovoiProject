@@ -1,0 +1,167 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.Plugins.LeapMotion.get">
+			<summary>
+			Returns a pointer to the LeapMotion plugin interface.
+			</summary>  
+			<returns>Pointer to LeapMotion.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isConnected">
+			<summary>
+			Returns a value indicating if the LeapMotion device is connected.
+			</summary>  
+			<returns>true if the LeapMotion device is connected; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isServiceConnected">
+			<summary>
+			Returns a value indicating if your application has a connection to the Leap Motion daemon/service.					Can return true even if the Leap Motion hardware is not available. To check if the hardware is connected, use the isConnected() method.
+			</summary>  
+			<returns>true if your application has a connection to the Leap Motion daemon/service; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isSmudged">
+			<summary>
+			Returns a value indicating if a possible smudge on the translucent cover over the Leap Motion cameras was detected.
+			</summary>  
+			<returns>true if a possible smudge on the translucent cover over the Leap Motion cameras was detected; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isLightingBad">
+			<summary>
+			Returns a value indicating if the excessive IR illumination was detected.
+			</summary>  
+			<returns>true if the excessive IR illumination was detected; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.hasFocus">
+			<summary>
+			Returns a value indicating if the application is the focused (foreground) application.					By default, your application only receives tracking information from the Leap Motion controller when it has the operating system input focus. To receive tracking data when your application is in the background, the background frames policy flag must be set.
+			</summary>  
+			<returns>true if the application is the focused (foreground) application; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.setPolicy(int)">
+			<summary>
+			Requests setting the specified policy. A request to change a policy is subject to user approval and a policy can be changed by the user at any time (using the Leap Motion settings dialog).					The desired policy flags must be set every time an application runs.
+			</summary> 
+			<param name="policy"> Policy. One of the POLICY_* values. </param> 
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isPolicySet(int)">
+			<summary>
+			Returns a value indicating if the specified policy is set. To set a policy use the setPolicy() method.
+			</summary> 
+			<param name="policy"> Policy type. One of the POLICY_* values. </param> 
+			<returns>true if the specified policy is set; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.clearPolicy(int)">
+			<summary>
+			Requests clearing the specified policy. A request to change a policy is subject to user approval and a policy can be changed by the user at any time (using the Leap Motion settings dialog).					The required policy flags must be set every time an application runs.
+			</summary> 
+			<param name="policy"> Policy. One of the POLICY_* values. </param> 
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.setPaused(bool)">
+			<summary>
+			Pauses or resumes the Leap Motion service.
+			</summary> 
+			<param name="pause"> true - to pause the Leap Motion service; false - to resume it. </param> 
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.isPaused">
+			<summary>
+			Returns a value indicating if the Leap Motion service is currently paused.
+			</summary>  
+			<returns>true if the Leap Motion service is currently paused; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getHorizontalViewAngle">
+			<summary>
+			Returns the angle of view along the X axis (long dimension) of the Leap Motion device. The Leap Motion controller scans a region in the shape of an inverted pyramid centered at the device’s center and extending upwards.
+			</summary>  
+			<returns>Angle of view along the X axis of the Leap Motion device, in degrees.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getVerticalViewAngle">
+			<summary>
+			Returns the angle of view along the Z axis (short dimension) of the Leap Motion device. The Leap Motion controller scans a region in the shape of an inverted pyramid centered at the device’s center and extending upwards.
+			</summary>  
+			<returns>Angle of view along the Z axis of the Leap Motion device, in degrees.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getRange">
+			<summary>
+			Returns the maximum recommended distance from the device center for which tracking is expected to be reliable.					This distance is not a hard limit. Tracking may be still be functional above this distance or begin to degrade slightly before this distance depending on calibration and extreme environmental conditions.
+			</summary>  
+			<returns>Maximum reliable tracking range from the center of this device, in meters.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getBaseline">
+			<summary>
+			Returns the distance between the center points of the stereo cameras of the Leap Motion device.
+			</summary>  
+			<returns>Distance between the center points of the stereo cameras of the Leap Motion device, in meters.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getFPS">
+			<summary>
+			Returns the current framerate.
+			</summary>  
+			<returns>Current framerate.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getDistanceToBoundary(Unigine.vec3)">
+			<summary>
+			Returns the distance from the specified point to the nearest edge of the Leap Motion controller's view volume. The view volume is an axis-aligned, inverted pyramid centered on the device origin and extending upward to the range limit. The walls of the pyramid are described by the horizontalViewAngle and verticalViewAngle and the roof by the range.
+			</summary> 
+			<param name="position"> Point to measure the distance from. </param> 
+			<returns>Distance from the specified point to the nearest edge of the Leap Motion controller’s view volume, in meters.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getImages">
+			<summary>
+			Returns the list of the most recent images from the infrared stereo cameras of the device. Images are in the Image::FORMAT_R8. The images can be used for:											Head-mounted display video pass-through						Augmented reality						Computer vision
+			</summary>  
+			<returns>Vector containing images from the cameras.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getNumImages">
+			<summary>
+			Returns the number of images stored in the list of the most recent images from the infrared stereo cameras of the device. Images are in the Image::FORMAT_R8.
+			</summary>  
+			<returns>Number of images stored in the array.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.getImage(int)">
+			<summary>
+			Returns the selected image from the list of the most recent images from the infrared stereo cameras of the device. Images are in the Image::FORMAT_R8.
+			</summary> 
+			<param name="num"> Index number of the image in the array. </param> 
+			<returns>Selected image from the cameras.</returns>
+		</member>
+		<member name="M:Unigine.Plugins.LeapMotion.saveHandsToStream(Unigine.Ptr{Unigine.Stream})">
+			<summary>
+			Saves hands to the indicated stream.
+			</summary> 
+			<param name="dest_stream"> Destination stream. </param> 
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_DEFAULT">
+			<summary>
+			Default policy flag. Enables default policy settings.
+		</summary>
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_BACKGROUND_FRAMES">
+			<summary>
+			Background frames policy flag. Determines whether an application receives frames of tracking data while in the background.					By default, the Leap Motion software only sends tracking data to the foreground application. Only applications that need this ability should request the background frames policy. The "Allow Background Apps" checkbox must be enabled in the Leap Motion Control Panel or this policy will be denied.
+		</summary>
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_IMAGES">
+			<summary>
+			Images policy flag. Enables your application to receive images from the device cameras.					The "Allow Images" checkbox must be enabled in the Leap Motion Control Panel or this policy will be denied.
+		</summary>
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_OPTIMIZE_HMD">
+			<summary>
+			HMD optimization policy flag. Enables tracking optimization for head-mounted tracking mode.					This policy improves tracking in situations where the Leap Motion hardware is attached to a head-mounted display. This policy is not granted for devices that cannot be mounted to an HMD, such as Leap Motion controllers embedded in a laptop or keyboard.
+		</summary>
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_ALLOW_PAUSE_RESUME">
+			<summary>
+			Pause resume policy flag. Determines if the application is allowed to pause and unpause the Leap Motion service.
+		</summary>
+		</member>
+		<member name="F:Unigine.Plugins.LeapMotion.POLICY_RAW_IMAGES">
+			<summary>
+			Images policy flag. Enables your application to receive raw images from the device cameras.
+		</summary>
+		</member>
+	</members>
+</doc>

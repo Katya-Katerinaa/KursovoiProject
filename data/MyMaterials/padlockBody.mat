@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="95ec46ee7251a35883e2ba7c65adca4ca05ac3a7" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<texture name="normal">guid://fc1f344f0a9029b04bb5937997ebadd2e77be73e</texture>
+	<parameter name="metalness" expression="0">0.689109981</parameter>
+</material>

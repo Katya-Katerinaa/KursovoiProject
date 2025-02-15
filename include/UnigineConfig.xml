@@ -1,0 +1,257 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.BootConfig.load">
+			<summary>
+			Loads Engine startup configuration from the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the config is successfully loaded from the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.BootConfig.save const">
+			<summary>
+			Saves the current Engine startup configuration to the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the current configuration is successfully saved to the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.BootConfig.reset">
+			<summary>
+			Resets the settings in the Engine startup configuration file to the default.
+			</summary>  
+		</member>
+		<member name="M:Unigine.BootConfig.removePluginPath(int)">
+			<summary>
+								Removes a plugin path with the specified number from the list of the plugin paths specified in the .boot configuration file via the plugin_path						 element.A plugin path is a directory containing plugins to be automatically loaded at the Engine startup.
+			</summary> 
+			<param name="num"> Number of the plugin path to be removed from the list of the specified plugin paths, in the range from 0 to the total number of plugin paths specified. </param> 
+		</member>
+		<member name="M:Unigine.BootConfig.swapPluginPath(int,int)">
+			<summary>
+								Swaps two plugin paths with the given numbers specified in the .boot configuration file.A plugin path is a directory containing plugins to be automatically loaded at the Engine startup. The list of these plugin paths can be obtained via the getNumPluginPaths() and getPluginPath(int num) methods.					The order of loading plugins matters, you can rearrange the paths via swapPluginPath()
+			</summary> 
+			<param name="num0"> Number of the first plugin path in the list of the specified plugin paths to be swapped, in the range from 0 to the total number of plugin paths specified. </param>
+			<param name="num1"> Number of the second plugin path in the list of the specified plugin paths to be swapped, in the range from 0 to the total number of plugin paths specified. </param> 
+		</member>
+		<member name="M:Unigine.BootConfig.getPluginPath(int)">
+			<summary>
+								Returns a plugin path with the given number specified in the .boot configuration file via the plugin_path element.A plugin path is a directory containing plugins to be automatically loaded at the Engine startup. The order of loading plugins matters, you can rearrange the paths via swapPluginPath().
+			</summary> 
+			<param name="num"> Plugin path number in the list of the specified plugin paths, in the range from 0 to the total number of plugin paths specified. </param> 
+			<returns>Path to the plugins directory with the given number in the list of the plugin paths. Сan be absolute or specified relatively to the binary executable.</returns>
+		</member>
+		<member name="M:Unigine.BootConfig.setPluginPath(int,char)">
+			<summary>
+								Sets a new path for the item of the list of the plugin paths with the given number specified in the .boot configuration file via the plugin_path element.A plugin path is a directory containing plugins to be automatically loaded at the Engine startup. The order of loading plugins matters, you can rearrange the paths via swapPluginPath().
+			</summary> 
+			<param name="num"> Plugin path number in the list of the specified plugin paths. </param>
+			<param name="value"> New path to be set for the specified item of the list of the plugin paths. Сan be specified relatively to the binary executable or as an absolute path. </param> 
+		</member>
+		<member name="M:Unigine.BootConfig.removeExternPlugin(int)">
+			<summary>
+								Removes a plugin with the specified number from the list of the plugins specified in the .boot configuration file via the extern_plugin element.
+			</summary> 
+			<param name="num"> Number of the plugin to be removed from the list of the specified plugins, in the range from 0 to the total number of plugins specified. </param> 
+		</member>
+		<member name="M:Unigine.BootConfig.swapExternPlugin(int,int)">
+			<summary>
+								Swaps two plugins with the given numbers specified in the .boot configuration file.The list of these plugins can be obtained via the getNumExternPlugins() and getExternPlugin(int num) methods. The order of loading plugins matters, this method enables you to rearrange plugins to change loading order.
+			</summary> 
+			<param name="num0"> Number of the first plugin in the list of the specified plugins to be swapped, in the range from 0 to the total number of plugins specified. </param>
+			<param name="num1"> Number of the second plugin in the list of the specified plugins to be swapped, in the range from 0 to the total number of plugins specified. </param> 
+		</member>
+		<member name="M:Unigine.BootConfig.getExternPlugin(int)">
+			<summary>
+								Returns the name of the plugin with the given number specified in the .boot configuration file via the extern_plugin element.The order of loading plugins matters, you can rearrange the paths via swapExternPlugin().
+			</summary> 
+			<param name="num"> Number of the plugin in the list of the specified plugins, in the range from 0 to the total number of plugins specified. </param> 
+			<returns>Name of the plugin with the given number specified in the .boot configuration file. Plugin library name goes without any prefixes and postfixes (e.g., libNetwork_x64d.so is listed as "Network").</returns>
+		</member>
+		<member name="M:Unigine.BootConfig.setExternPlugin(int,char)">
+			<summary>
+			Sets a new name of the plugin with the given number specified in the .boot configuration file via the extern_plugin element.The order of loading plugins matters, you can rearrange the paths via swapExternPlugin().
+			</summary> 
+			<param name="num"> Number of the plugin to be set in the list of the specified plugins, in the range from 0 to the total number of plugins specified. </param>
+			<param name="value"> Name of the plugin with the given number specified in the .boot configuration file. Plugin library name goes without any prefixes and postfixes (e.g., libNetwork_x64d.so is listed as "Network"). </param> 
+		</member>
+		<member name="M:Unigine.Config.setBool(char,int)">
+			<summary>
+			Sets a value of the given boolean setting. If the setting with this name already exists, its value is overwritten.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Boolean value (0 or 1). 0 stands for false, 1 stands for true. </param> 
+		</member>
+		<member name="M:Unigine.Config.getBool(char)">
+			<summary>
+			Reads the value of the given boolean setting.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+			<returns>Boolean value (0 or 1) of the setting. 0 stands for false, 1 stands for true.</returns>
+		</member>
+		<member name="M:Unigine.Config.getBool(char,int)">
+			<summary>
+			Reads the value of the given boolean setting. Returns the value specified as the second argument if the setting isn't found.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Custom value to be returned if the setting isn't found. </param> 
+			<returns>Boolean value (0 or 1) of the setting. 0 stands for false, 1 stands for true.</returns>
+		</member>
+		<member name="M:Unigine.Config.isExist(char)">
+			<summary>
+			Checks if the setting with the given name exists.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+			<returns>1 if the setting exists; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Config.setFloat(char,float)">
+			<summary>
+			Sets a value of the given float setting. If the setting with this name already exists, its value is overwritten.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Float value of the setting. </param> 
+		</member>
+		<member name="M:Unigine.Config.getFloat(char,float)">
+			<summary>
+			Reads the value of the given float setting. Returns the value specified as the second argument if the setting isn't found.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Custom value to be returned if the setting isn't found. </param> 
+			<returns>Float value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.getFloat(char)">
+			<summary>
+			Reads the value of the given float setting.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+			<returns>Float value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.setInt(char,int)">
+			<summary>
+			Sets a value of the given integer setting. If the setting with this name already exists, its value is overwritten.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Integer value of the setting. </param> 
+		</member>
+		<member name="M:Unigine.Config.getInt(char)">
+			<summary>
+			Reads the value of the given integer setting.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+			<returns>Integer value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.getInt(char,int)">
+			<summary>
+			Reads the value of the given integer setting. Returns the value specified as the second argument if the setting isn't found.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Custom value to be returned if the setting isn't found. </param> 
+			<returns>Integer value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.setString(char,char)">
+			<summary>
+			Sets a value of the given string setting. If the setting with this name already exists, its value is overwritten.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> String value of the setting. </param> 
+		</member>
+		<member name="M:Unigine.Config.getString(char,char)">
+			<summary>
+			Reads the value of the given string setting. Returns the value specified as the second argument if the setting isn't found.
+			</summary> 
+			<param name="name"> Name of the setting. </param>
+			<param name="value"> Custom value to be returned if the setting is found. </param> 
+			<returns>String value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.getString(char)">
+			<summary>
+			Reads the value of the given string setting.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+			<returns>String value of the setting.</returns>
+		</member>
+		<member name="M:Unigine.Config.load">
+			<summary>
+			Loads config from the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the config is successfully loaded from the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Config.remove(char)">
+			<summary>
+			Removes the setting with the given name from the configuration file.
+			</summary> 
+			<param name="name"> Name of the setting. </param> 
+		</member>
+		<member name="M:Unigine.Config.save">
+			<summary>
+			Saves the current configuration to the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the current configuration is successfully saved to the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Config.setPath(char)">
+			<summary>
+			Sets a new path to the Engine config file (default: configs/default.config). The path can be specified as an absolute path or relative to the -data_path or &lt;project_name&gt; folder if the -project_name is set.
+			</summary> 
+			<param name="path"> New path to the Engine configuration file to be set. </param> 
+		</member>
+		<member name="M:Unigine.Config.getPath const">
+			<summary>
+			Returns the current path to the Engine config file (default: configs/default.config).
+			</summary>  
+			<returns>Current path to the Engine configuration file.</returns>
+		</member>
+		<member name="M:Unigine.Config.setAutosave(bool)">
+			<summary>
+			Sets a value indicating if current Engine configuration settings are automatically saved to the corresponding config file on loading, closing, and saving the world, as well as on the Engine shutdown.
+			</summary> 
+			<param name="autosave"> true to enable automatic saving of current Engine configuration settings; false — to disable it. </param> 
+		</member>
+		<member name="M:Unigine.Config.isAutosave const">
+			<summary>
+			Returns a value indicating if current Engine configuration settings are automatically saved to the corresponding config file on loading, closing, and saving the world, as well as on the Engine shutdown.
+			</summary>  
+			<returns>true if automatic saving of current Engine configuration settings is enabled; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.UserConfig.setPath(char)">
+			<summary>
+			Sets a new path to the user configuration file (default: configs/default.user). The path can be specified as an absolute path or relative to the -data_path or &lt;project_name&gt; folder if the -project_name is set.
+			</summary> 
+			<param name="path"> New path to the user configuration file to be set. </param> 
+		</member>
+		<member name="M:Unigine.UserConfig.getPath const">
+			<summary>
+			Returns the current path to the user configuration file (default: configs/default.user).
+			</summary>  
+			<returns>Current path to the user configuration file.</returns>
+		</member>
+		<member name="M:Unigine.UserConfig.setAutosave(bool)">
+			<summary>
+			Sets a value indicating if current user configuration settings are automatically saved to the corresponding user config file (configs/default.user by default) on loading, closing, and saving the world, as well as on the Engine shutdown.
+			</summary> 
+			<param name="autosave"> true to enable automatic saving of current user configuration settings; false — to disable it. </param> 
+		</member>
+		<member name="M:Unigine.UserConfig.isAutosave const">
+			<summary>
+			Returns a value indicating if current user configuration settings are automatically saved to the corresponding user config file (configs/default.user by default) on loading, closing, and saving the world, as well as on the Engine shutdown.
+			</summary>  
+			<returns>true if automatic saving of current user configuration settings is enabled; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.UserConfig.load">
+			<summary>
+			Loads user configuration from the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the user configuration is successfully loaded from the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.UserConfig.save const">
+			<summary>
+			Saves the current user configuration to the file. To change the path to the configuration file use the setPath() method.
+			</summary>  
+			<returns>true if the current user configuration is successfully saved to the file; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.UserConfig.reset">
+			<summary>
+			Resets the settings in the user configuration file to the default.
+			</summary>  
+		</member>
+	</members>
+</doc>

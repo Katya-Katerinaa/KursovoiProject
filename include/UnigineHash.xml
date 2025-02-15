@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.Hasher class.create(Type)">
+			<summary>
+			Converts the given value to the type supported by the hash table. For example, hash for the String type will be generated as folows:
+			</summary> 
+			<param name="v"> The value to convert from. </param> 
+			<returns>The converted value supported by the hash table.</returns>
+		</member>
+	</members>
+</doc>

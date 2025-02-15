@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Natvis Include="../utils/natvis/unigine_stl.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppEditorLogic.cpp" />
+    <ClCompile Include="AppSystemLogic.cpp" />
+    <ClCompile Include="AppWorldLogic.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModelAnimation.cpp">
+      <Filter>ModelAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTip.cpp">
+      <Filter>ToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolTipGUI.cpp">
+      <Filter>ToolTip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppEditorLogic.h" />
+    <ClInclude Include="AppSystemLogic.h" />
+    <ClInclude Include="AppWorldLogic.h" />
+    <ClInclude Include="ModelAnimation.h">
+      <Filter>ModelAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTip.h">
+      <Filter>ToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolTipGUI.h">
+      <Filter>ToolTip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ModelAnimation">
+      <UniqueIdentifier>{8377098d-0b35-4977-b520-a56e92dd8078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolTip">
+      <UniqueIdentifier>{ea1a035a-b5ce-45b9-955e-9f63304af1de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="ModelAnimation" manual="1" parent_name="node_base">
+	<parameter name="nPress" type="node">0</parameter>
+	<parameter name="animPath_Razborka" type="file"/>
+	<parameter name="AnimCamera" type="node">0</parameter>
+</property>

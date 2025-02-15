@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="2e0dd74867de010a4ce75899f328966e64046ebd" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<texture name="albedo">guid://c0ae8054818bcb3f39892f95e18f8634fb5e2879</texture>
+	<parameter name="uv_transform" expression="0">0.754999995 0.699999988 0.119999997 0.150000006</parameter>
+</material>

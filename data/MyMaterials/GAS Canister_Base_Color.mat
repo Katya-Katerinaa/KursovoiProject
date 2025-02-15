@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="5e54e6a6ef0dbf6d8589dd745e5b5b28bf02a3bf" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<texture name="albedo">guid://43c12ca67f0e76b911013374064d367a751ae1bf</texture>
+	<texture name="shading">guid://a4955302ac2fb2aa45e597708572f01bc650ab4b</texture>
+	<texture name="normal">guid://e332f3a0989d15c244ea2d5e23db378973f8e481</texture>
+	<parameter name="albedo_color" expression="0">0.800000072 0.721568644 0.654901981 1</parameter>
+</material>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ui version="1.0">
+ <vbox name="vbox1" 
+       export="1" 
+       color="#5487F4" 
+       padding="10">
+   
+   <align align="left">
+     
+     <window export="1" sizeable="0" align="left">
+       <label>
+         <text rich="1">
+           <font size="17"><b>Название:</b></font>
+         </text>
+       </label>
+       <label name="Object_name"></label>
+     </window>
+     
+     <window export="1" sizeable="0">
+       <label>
+         <text rich="1">
+          <font size="17"><b>Описание:</b></font>
+         </text>
+       </label>
+       <label name="Object_description">
+         <text>
+           <font><i>Description</i>
+           </font>
+         </text>
+       </label>
+	   <sprite name="Object_Sprite" export="1" scale="0.5">
+		</sprite>
+     </window>
+     
+   </align>
+ </vbox >
+  
+</ui>

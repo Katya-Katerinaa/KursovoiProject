@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="d26d841fdca47f9baa7940707317fa2d8219a897" parent="435bcdab0038b90f19aabbfec87b283562a80646" base_material="d8e03c75c782dc48761632f9b0a3e49bc1943271">
+	<parameter name="auxiliary" expression="0">0</parameter>
+</material>

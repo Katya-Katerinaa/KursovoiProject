@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="790f5b1c8931a4c4bc5a63066c14cbeaf57f3d1a" base_material="a7e0d620c739a28d2f157735298e4243d90caf67">
+	<parameter name="auxiliary_color" expression="0">0.513725519 1 0.192156881 1</parameter>
+</material>

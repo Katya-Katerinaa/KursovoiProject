@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="788717866" name="Гидравлический_брикетировочный_пресс_Анимация_Разборки5_2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="1113923201" name="Armature">
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -5.61813286975e-08 0.642639466454 -2.80906643488e-08 1.0</transform>
+		</node>
+		<node type="PlayerDummy" id="1615980012" name="Camera">
+			<fov>79.3509445</fov>
+			<znear>10</znear>
+			<zfar>100000</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>0</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>-21.7688152853 -30.2830799098 92.7849784522 0.0 -81.1979107647 58.3686629394 6.06816755462e-06 0.0 -54.1573531688 -75.3394626857 -37.2953946217 0.0 1.5995818042 4.44132423579 3.20683945966 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="910141531" name="Empty">
+			<transform>52.6548805237 4.60323678611e-06 -4.60323603614e-06 0.0 4.60323678611e-06 -8.57856851425e-06 52.6548805237 0.0 4.60323603614e-06 -52.6548805237 -8.57856891668e-06 0.0 -1.13108070415 0.642639480481 1.32637194844 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1268892158" name="Empty.001">
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -1.62077564549 0.642639431516 1.18555841746 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2025783621" name="Empty.002">
+			<transform>17.151260376 1.49941110692e-06 -1.49941086264e-06 0.0 1.49941110692e-06 -2.79429486456e-06 17.151260376 0.0 1.49941086264e-06 -17.151260376 -2.79429499564e-06 0.0 -1.3089839705 0.642639691288 2.7347999341 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="408977888" immovable="1" name="Press - Press.STEP-1 electrical box.STEP-1.001">
+			<mesh_name>guid://2a6ebdec049dc4e0b8b8a6c72963ad06801f2f24</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>4.11813306808 2.3276451852e-22 1.57369146176e-14 0.0 2.00482032479e-22 4.11813306808 -1.80009313556e-07 0.0 -1.57369146176e-14 1.80009313556e-07 4.11813306808 0.0 0.0378361030264 -0.0522587858405 0.00191004631505 1.0</transform>
+		</node>
+		<node type="ObjectMeshSkinned" id="469027775" name="Press - Press.STEP-1 electrical box.STEP-1.002">
+			<mesh_name>guid://306c934a2383ed28f772f7cb85a63145c550b033</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://5d2b49940fe55de6a4ace39d492aa19fedd18f85</anim_name>
+			<speed>30</speed>
+			<surface name="рабочий стол.001" intersection="1" material="6138267e97470f452d60ced13e14e81a47783976"/>
+			<surface name="ребра жесткости стоек" intersection="1" material="e32013760b59f7f6805618e957b3b35c6ed1946e"/>
+			<surface name="ребра жёсткости рабочего стола" intersection="1" material="4ff135a496c5cc7c02e0789f7ede99785227badc"/>
+			<surface name="горизонт. часть стола (рабоч" intersection="1" material="f8edf62c2f2855afce3e7607a2152283c26ba764"/>
+			<surface name="ISO 4762 Винты M12x20" intersection="1" material="2d753394cdf3085bc61220cfae7a2197489388cc"/>
+			<surface name="основание гидропресса" intersection="1" material="fd26ad90aff57acfaed6cb5b16f52a71215839c8"/>
+			<surface name="ISO 7412 Болты M16x45" intersection="1" material="3efce198a3edd4ed010cfe43d65896441b12add0"/>
+			<surface name="Рычаги крепления стола" intersection="1" material="7bed62e66db38419da009c99dbda37f2767ec7de"/>
+			<surface name="Металл .001" intersection="1" material="f13a9be0f14f69294152566b06f75558d6248018"/>
+			<surface name="стойки" intersection="1" material="1fb6defa34c82aa4be36eddd5de9f398750fd9f2"/>
+			<surface name="основной корпус" intersection="1" material="53e02cae768195f263afd64159cd6c0258f603a6"/>
+			<surface name="пресс" intersection="1" material="933f373edfffb92e12390491a1dd7ad5ea699a36"/>
+			<surface name="рабочий цилиндр" intersection="1" material="7e8050bcd3b99f1a2ae3b4571249d6bdac0a01f4"/>
+			<surface name="электр коробка" intersection="1" material="93a8b542a09727da6c747205201d5fb29b122e3a"/>
+			<surface name="Кнопка еще одна" intersection="1" material="de944ba68fc7f2c9846e4a5967f08379be5c409e"/>
+			<surface name="зеленая кнопка" intersection="1" material="388c7548e815ab65220aad33e0c8c7066dff9980"/>
+			<surface name="Салатовая кнопка" intersection="1" material="b30ad3ba11956ee355f3f79d21fbed36d4367eb2"/>
+			<surface name="Красная кнопка" intersection="1" material="26ef48d264119fec138fe555cbbcdfaa847665ca"/>
+			<surface name="большая кнопка основание" intersection="1" material="c98fd37cc87534e137c854179a9f31d9a9c1c4b4"/>
+			<surface name="большая кнопка основная часть" intersection="1" material="c8d0b50efaf5406a66b4f1219709abe52e4bb406"/>
+			<surface name="основание у самой большой кнопки" intersection="1" material="df3f9f160a63a00a12664209e341c414cb65d80e"/>
+			<surface name="самая большая красная штука" intersection="1" material="6da300443716f1814d8804bf2368880d819d857c"/>
+			<surface name="ISO 4762 Винты М16х140" intersection="1" material="d2ae00f4d305fe931447ccaf1393cbe31d40962c"/>
+			<surface name="шток" intersection="1" material="580a2f461d265f9730206b79c7cdc3be9a8b1c3e"/>
+			<surface name="Фланец" intersection="1" material="a877d2722c8e63f3a4715475adfe2c3a027bf76a"/>
+			<surface name="Таблица" intersection="1" material="85dbacf085fc991dc4c5a13b07196fcef74c2928"/>
+			<surface name="поршень" intersection="1" material="7922aa1c6b3532bfada33c37710edd6efeb8bb54"/>
+			<surface name="ISO 4034 Гайка с резьбой M36" intersection="1" material="360bc1e84aeee77b686d735385e23e6f0adc1620"/>
+			<surface name="Буферное уплотнение (2 кольца)" intersection="1" material="e94206de3006a6b00e5ee1b13094e0a9e7bb81d6"/>
+			<surface name="Направляющая" intersection="1" material="39b9d7d6d1554027620fffc9c574b8ae1a8e20ce"/>
+			<surface name="Направляющее кольцо" intersection="1" material="2478b340a8b5e91c2672e44bdc36bb2e4591c778"/>
+			<surface name="Грязесъемное кольцо" intersection="1" material="593f788a5d8a3be437c78f2de6e3bcf7929ba782"/>
+			<surface name="Уплотнение штока" intersection="1" material="830a64ccf52c1277f83996278ef402eb52b47604"/>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<surface name="гидравлический шланговый фитинг" intersection="1" material="26dda36c49e5f00b18564647cff23206208394a4"/>
+			<surface name="ISO 4762 Винты M10x60" intersection="1" material="ee387e2a4b588ce479a00a4dab0d1196623b5522"/>
+			<surface name="шланг2" intersection="1" material="3316f44ecbb185a12e6acb61a2489ad2cbff2346"/>
+			<surface name="шланг1" intersection="1" material="28079e5464cd8627ac21088fea9248cab03df38c"/>
+			<surface name="распределитель" intersection="1" material="a76e163858b0a0e9f66d0c633393887cac40d270"/>
+			<transform>1 6.93771004924e-23 3.82137123179e-15 0.0 2.41430667903e-22 1 -8.74227800037e-08 0.0 -3.82137123179e-15 8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="380790290" immovable="1" name="Press - Press.STEP-1 electrical box.STEP-1.003">
+			<mesh_name>guid://fcb1c4feba7b0cb609a12351c38452639cb737f6</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>4.11813306808 2.3276451852e-22 1.57369146176e-14 0.0 2.00482032479e-22 4.11813306808 -1.80009313556e-07 0.0 -1.57369146176e-14 1.80009313556e-07 4.11813306808 0.0 0.0378360835927 0.170037127152 0.00191003659819 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1877691977" immovable="1" name="Press - Press.STEP-1 electrical box.STEP-1.024">
+			<mesh_name>guid://3364ed8cbb455311a33723f51fdb119ea90ecedd</mesh_name>
+			<surface name="шланг2" intersection="1" material="3316f44ecbb185a12e6acb61a2489ad2cbff2346"/>
+			<transform>4.11813306808 2.3276451852e-22 1.57369146176e-14 0.0 2.00482032479e-22 4.11813306808 -1.80009313556e-07 0.0 -1.57369146176e-14 1.80009313556e-07 4.11813306808 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1370751764" immovable="1" name="Press - Press.STEP-1 hose.STEP-1.001">
+			<mesh_name>guid://ac885e608c8a7b2fe479beeb5a230fc3ec308298</mesh_name>
+			<surface name="шланг2" intersection="1" material="3316f44ecbb185a12e6acb61a2489ad2cbff2346"/>
+			<transform>4.11813306808 2.3276451852e-22 1.57369146176e-14 0.0 2.00482032479e-22 4.11813306808 -1.80009313556e-07 0.0 -1.57369146176e-14 1.80009313556e-07 4.11813306808 0.0 -1.93635353366e-18 2.21493017447e-11 0.00050671693908 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1757483875" immovable="1" name="Press - Press.STEP-1 hose2.STEP-1">
+			<mesh_name>guid://694bad9e079379ff6011b82f7fbdc7bb4fc62517</mesh_name>
+			<surface name="шланг1" intersection="1" material="28079e5464cd8627ac21088fea9248cab03df38c"/>
+			<transform>4.11813306808 2.3276451852e-22 1.57369146176e-14 0.0 2.00482032479e-22 4.11813306808 -1.80009313556e-07 0.0 -1.57369146176e-14 1.80009313556e-07 4.11813306808 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1621188966" immovable="1" name="Гидростанция 3D-модель">
+			<mesh_name>guid://cc3f3292c494e558f9cc70154828dfdddb84ff8a</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1952811405" immovable="1" name="Гидростанция 3D-модель.001">
+			<mesh_name>guid://c42aa800ad082144ff93d2f9accb88e3547ae961</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="153755016" immovable="1" name="Гидростанция 3D-модель.002">
+			<mesh_name>guid://f0fa1e14f423b4cd643f114f97d7307a4a22734c</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1570677575" immovable="1" name="Гидростанция 3D-модель.003">
+			<mesh_name>guid://670ec5326e798159d9eeb6d3395c4a43fc8b163b</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="612009978" immovable="1" name="Гидростанция 3D-модель.004">
+			<mesh_name>guid://bfdf5166864127d706ee01195e8ca224a61d965e</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="809465617" immovable="1" name="Гидростанция 3D-модель.005">
+			<mesh_name>guid://515621b487fff16323686a3da2e304ae25070a25</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="432129340" immovable="1" name="Гидростанция 3D-модель.006">
+			<mesh_name>guid://eef7710815071db40c07c1f3dbeef4f5e9723540</mesh_name>
+			<surface name=" шланговый фитинг" intersection="1" material="4d497e300aaf07729786857b864c4935a4bb9a68"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228156096 0.759706531047 0.872614106691 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="45604715" immovable="1" name="Гидростанция 3D-модель.007">
+			<mesh_name>guid://f46b2e0600da7d38e3a157b7ac0580d4cbb3279f</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1950150094" immovable="1" name="Гидростанция 3D-модель.008">
+			<mesh_name>guid://66cab57aaf40f7f5ab919a5d25de02bcd4d85072</mesh_name>
+			<surface name=" шланговый фитинг" intersection="1" material="4d497e300aaf07729786857b864c4935a4bb9a68"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228154154 0.537552145999 0.872614116402 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="593828565" immovable="1" name="Гидростанция 3D-модель.010">
+			<mesh_name>guid://cfb4cea8374ccb917112edc1ec00ffee169a7529</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1880043056" immovable="1" name="Гидростанция 3D-модель.011">
+			<mesh_name>guid://e9030b3c4b83f007547d34d7a3f2ff295df63c74</mesh_name>
+			<surface name="у насоса" intersection="1" material="33b4b6e295c3c3400d0c7925f1213663916677da"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2085317583" immovable="1" name="Гидростанция 3D-модель.012">
+			<mesh_name>guid://83c37c1a08dbc4e7c96f3edbe64c4922055a3d43</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="544138978" immovable="1" name="Гидростанция 3D-модель.013">
+			<mesh_name>guid://299b32cee884a5720e773fe1ad13a4a071f7c1c6</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>1.19595787068e-07 6.02144908905 -2.63205555999e-07 0.0 6.02144908905 -1.19595963822e-07 -4.04367007009e-06 0.0 -4.04367007531e-06 -2.63205475685e-07 -6.02144908905 0.0 -3.08781558438 0.645243317196 0.71441037616 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="505460953" immovable="1" name="Гидростанция 3D-модель.014">
+			<mesh_name>guid://a50362dc54a2b39affc9a1851118c3d3a98eae6d</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1525664868" immovable="1" name="Гидростанция 3D-модель.015">
+			<mesh_name>guid://7362e0b04052f85781170dfb3f264268bad23ce8</mesh_name>
+			<surface name="у насоса" intersection="1" material="33b4b6e295c3c3400d0c7925f1213663916677da"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1540369523" immovable="1" name="Гидростанция 3D-модель.016">
+			<mesh_name>guid://bf7b836e32a30b7853b0503f2b2f474d70087b27</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="787613494" immovable="1" name="Гидростанция 3D-модель.017">
+			<mesh_name>guid://8ddfdd6262f7951f0d5735a52948d6d554bdbe5a</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228154154 0.537552145999 0.872614116402 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1105122589" immovable="1" name="Гидростанция 3D-модель.018">
+			<mesh_name>guid://c861d250e908aa20e89f0989815eb4abbab379f1</mesh_name>
+			<surface name="у насоса" intersection="1" material="33b4b6e295c3c3400d0c7925f1213663916677da"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="763253720" immovable="1" name="Гидростанция 3D-модель.019">
+			<mesh_name>guid://f9d4256493ce6297e07f315f9679e9f922ab2a9c</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="291063127" immovable="1" name="Гидростанция 3D-модель.020">
+			<mesh_name>guid://778c58025615990d9372afe345677b4d5b56454b</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1964450506" immovable="1" name="Гидростанция 3D-модель.023">
+			<mesh_name>guid://8af1093652eec9266be5ffa94f43103503bf5a2e</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228156096 0.759706531047 0.872614106691 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1278358433" immovable="1" name="Гидростанция 3D-модель.024">
+			<mesh_name>guid://02075104bc8e4ec35bc5e9cd45b379b77992dbb5</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="642168972" immovable="1" name="Гидростанция 3D-модель.025">
+			<mesh_name>guid://387f4d58db697fe44b35c303e2fbd9ab611b3990</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1631197819" immovable="1" name="Гидростанция 3D-модель.026">
+			<mesh_name>guid://40584dd6a692f881315ec1c7298e542aa2d03faf</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228156096 0.759706531047 0.872614106691 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1760710046" immovable="1" name="Гидростанция 3D-модель.027">
+			<mesh_name>guid://84044a4a3752cf10eb1861edefe3fa21b278e942</mesh_name>
+			<surface name="у насоса" intersection="1" material="33b4b6e295c3c3400d0c7925f1213663916677da"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.978847012113 0.030018778215 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="806869093" immovable="1" name="Гидростанция 3D-модель.028">
+			<mesh_name>guid://be3652f80254d3e2821546518b14c67340f517b9</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1337601664" immovable="1" name="Гидростанция 3D-модель.029">
+			<mesh_name>guid://5c2c0c8cdd5c42d4447526e7ea96626f8165ddc4</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="32133087" immovable="1" name="Гидростанция 3D-модель.030">
+			<mesh_name>guid://56bef8eaa522fe3be2db29ebfb5af2850d1b4e53</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2112805810" immovable="1" name="Гидростанция 3D-модель.031">
+			<mesh_name>guid://bb80749e186dfce24ca760718270f4046e21ff96</mesh_name>
+			<surface name="у насоса" intersection="1" material="33b4b6e295c3c3400d0c7925f1213663916677da"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1098581865" immovable="1" name="Гидростанция 3D-модель.032">
+			<mesh_name>guid://27708c2cb349d8116ecc63150a29c68755a4b1fd</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>-8.20353347905e-07 6.25583171844 -8.20353300093e-07 0.0 5.46902104438e-07 8.2035337181e-07 6.25583171844 0.0 6.25583171844 8.20353276187e-07 -5.46902212015e-07 0.0 -3.08228154154 0.537552145999 0.872614116402 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1306732980" immovable="1" name="Гидростанция 3D-модель.033">
+			<mesh_name>guid://bdb5570032952a556156010bc0314ace966bcb38</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1177143683" immovable="1" name="Гидростанция 3D-модель.034">
+			<mesh_name>guid://9d712d3e4f683e3ce970cc4fc744010dab589537</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="547578118" immovable="1" name="Гидростанция 3D-модель.035">
+			<mesh_name>guid://53919c32ee7422f186d43f3522e02655cdc1712a</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1996047533" immovable="1" name="Гидростанция 3D-модель.036">
+			<mesh_name>guid://7beaf0a0519222e8a596c419ac545348cf726e81</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1297702440" immovable="1" name="Гидростанция 3D-модель.037">
+			<mesh_name>guid://6cbd60b4b0eb98c6da33356f1665ff0327def5ec</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2003086183" immovable="1" name="Гидростанция 3D-модель.038">
+			<mesh_name>guid://c784fed26788fc79c06eccf3f868d8e41cc9785b</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="635810202" immovable="1" name="Гидростанция 3D-модель.039">
+			<mesh_name>guid://2ffd1506b8069f38ac6c8239fa2a35bab98151fe</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="98980913" immovable="1" name="Гидростанция 3D-модель.040">
+			<mesh_name>guid://d241b4543429b28ef8d02d5d6e8bd2c630795145</mesh_name>
+			<surface name="Крышка" intersection="1" material="be099ae4b808881e4f9720df1e961a89e4b7a01c"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="125157340" immovable="1" name="Гидростанция 3D-модель.041">
+			<mesh_name>guid://fda19da81a1879e26a4de813c47bbd53f8b691e0</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1146575243" immovable="1" name="Гидростанция 3D-модель.042">
+			<mesh_name>guid://0449c1a6dab56c5a5cce8fd76508f49fdab39bbf</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1092542830" immovable="1" name="Гидростанция 3D-модель.043">
+			<mesh_name>guid://4d35731a94b116454d0ded7db16435eb1d42f612</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1552955893" immovable="1" name="Гидростанция 3D-модель.044">
+			<mesh_name>guid://c16c4b482291ef8ac408a2e179c898d46ea29e49</mesh_name>
+			<surface name="металл насос" intersection="1" material="579903a2362ecea8217d7ae55e55f03d8021b49a"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="264667856" immovable="1" name="Гидростанция 3D-модель.045">
+			<mesh_name>guid://4eaec1dcb016a514e1b17cf7f24362c01ae31314</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1743943663" immovable="1" name="Гидростанция 3D-модель.046">
+			<mesh_name>guid://c05c09ba1c95580fa357b8fbbc2d0409f084e363</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1440695426" immovable="1" name="Гидростанция 3D-модель.047">
+			<mesh_name>guid://60ae8a6ed52fd65151aa8501aa896cb89a72f166</mesh_name>
+			<surface name="показатель уровня масла" intersection="1" material="e00fb15aec9b91def19deabd6ef4d4ca418e4452"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1052981753" immovable="1" name="Гидростанция 3D-модель.048">
+			<mesh_name>guid://9ff1697c87b2e531c6c868a5263ecac87369d98d</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1589844740" immovable="1" name="Гидростанция 3D-модель.049">
+			<mesh_name>guid://3894c1505eb4961e0d57981b03bf411084422d88</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1820256915" immovable="1" name="Гидростанция 3D-модель.050">
+			<mesh_name>guid://4ff9ab0e7c237fb2f9042c5f0d562fe8c4377347</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="951217878" immovable="1" name="Гидростанция 3D-модель.051">
+			<mesh_name>guid://d6716f02ac8c0048994c8cc5b87dd7f28d1d17fa</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="143513661" immovable="1" name="Гидростанция 3D-модель.052">
+			<mesh_name>guid://4e5b02f0cef1a10a239402a94634930355e0c711</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1304444024" immovable="1" name="Гидростанция 3D-модель.053">
+			<mesh_name>guid://5e1ad004429c1357d98c1d7f0e622b1598d2d53c</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="788649335" immovable="1" name="Гидростанция 3D-модель.054">
+			<mesh_name>guid://9695b9a2a3e1b7c411a40e03b315559ad2f5af6b</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="858993770" immovable="1" name="Гидростанция 3D-модель.055">
+			<mesh_name>guid://7ff074d6a24a4180da1a88c9c67fd15cf8407dce</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1531238593" immovable="1" name="Гидростанция 3D-модель.056">
+			<mesh_name>guid://c0ea4ba4cbc82a46473034edebae19cfd2f36ad5</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2015615788" immovable="1" name="Гидростанция 3D-модель.057">
+			<mesh_name>guid://8f1361f81c1cc9add291312355cdd6295e293e30</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="115383451" immovable="1" name="Гидростанция 3D-модель.058">
+			<mesh_name>guid://ffac89764fbbe86d60c1c1e714e0a8f185fe3bcf</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1600104766" immovable="1" name="Гидростанция 3D-модель.059">
+			<mesh_name>guid://881b2feaa18004de8a9b3d0db0f7f2842d6376e2</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="952582021" immovable="1" name="Гидростанция 3D-модель.060">
+			<mesh_name>guid://bc8bb798cbcd1f31bc2603714f5a7a50c7ec08d9</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="903424800" immovable="1" name="Гидростанция 3D-модель.061">
+			<mesh_name>guid://72902b2c4f2b2309678337073a1e61314c22dc64</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="902095871" immovable="1" name="Гидростанция 3D-модель.070">
+			<mesh_name>guid://5cd7ae8aabcaff58d0c5ec0bece8557383c7fc73</mesh_name>
+			<surface name="электродвигатель" intersection="1" material="62807ab6965b2db9fe087b295123e622cc32ebae"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="774709586" immovable="1" name="Гидростанция 3D-модель.071">
+			<mesh_name>guid://80b2743ee8e434a1d739ad91614edb9143679736</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1359106185" immovable="1" name="Гидростанция 3D-модель.072">
+			<mesh_name>guid://7b0afaccf509e85d2e86b2359c3b4401b337251d</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.90302931736 1.1488841895 0.238564201814 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="587505748" immovable="1" name="Гидростанция 3D-модель.073">
+			<mesh_name>guid://6c561fa009f9ee67937cd32ba07e798ceeda63d8</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.90302929792 0.926588245605 0.238564211531 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="62951331" immovable="1" name="Гидростанция 3D-модель.074">
+			<mesh_name>guid://7d21fcdefff9f726a45b706f6b7d610f21661557</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="761016486" immovable="1" name="Гидростанция 3D-модель.075">
+			<mesh_name>guid://9cdc55d21577abe4e8091e550f5a5c16b09db2ca</mesh_name>
+			<surface name="горизонт. часть стола (рабоч" intersection="1" material="f8edf62c2f2855afce3e7607a2152283c26ba764"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94665864555 0.928719363271 0.0890728404463 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="95784909" immovable="1" name="Гидростанция 3D-модель.077">
+			<mesh_name>guid://2a8709404a3783c323efc5390eef10227f6783a1</mesh_name>
+			<surface name="Резина насос" intersection="1" material="40411ad8ec9010c8168daa83be1d056591b04710"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.9462734649 0.929081251278 0.0504409472633 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1761078984" immovable="1" name="Гидростанция 3D-модель.078">
+			<mesh_name>guid://f1917354abbf5972d0fae98f652b4e5dcddbc88c</mesh_name>
+			<surface name="Резина насос" intersection="1" material="40411ad8ec9010c8168daa83be1d056591b04710"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="733070215" immovable="1" name="Гидростанция 3D-модель.079">
+			<mesh_name>guid://919b8872be1ea60ca6137313d7b75833d82bea7b</mesh_name>
+			<surface name="Резина насос" intersection="1" material="40411ad8ec9010c8168daa83be1d056591b04710"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1619831610" immovable="1" name="Гидростанция 3D-модель.080">
+			<mesh_name>guid://6cf828a64b7b61c9fac9135944c9d7e29c19dd9e</mesh_name>
+			<surface name="Резина насос" intersection="1" material="40411ad8ec9010c8168daa83be1d056591b04710"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1752613201" immovable="1" name="Гидростанция 3D-модель.081">
+			<mesh_name>guid://7c2616f4c81c4c1a2bcf007ddfb20ea51c7a2865</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1013320316" immovable="1" name="Гидростанция 3D-модель.082">
+			<mesh_name>guid://c0c99a486a212cdc7b809e33b4cc897d4c983e80</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2078729131" immovable="1" name="Гидростанция 3D-модель.083">
+			<mesh_name>guid://b32da5467b69c27c0a4957f77218afbde3911fdf</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1100064014" immovable="1" name="Гидростанция 3D-модель.084">
+			<mesh_name>guid://afb280ba3d82cd0c1529509dce91841eba476bb2</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="922085653" immovable="1" name="Гидростанция 3D-модель.085">
+			<mesh_name>guid://b60997e8f8b565bb8be668019433fbb1ab5a5769</mesh_name>
+			<surface name="горизонт. часть стола (рабоч" intersection="1" material="f8edf62c2f2855afce3e7607a2152283c26ba764"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1154951024" immovable="1" name="Гидростанция 3D-модель.086">
+			<mesh_name>guid://b115487c91d6de43037b5517ac8d7d23781a39b4</mesh_name>
+			<surface name="Резина насос" intersection="1" material="40411ad8ec9010c8168daa83be1d056591b04710"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1325569039" immovable="1" name="Гидростанция 3D-модель.087">
+			<mesh_name>guid://1daee75ad071be57a746c31bbe1672f26b559983</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1006989858" immovable="1" name="Гидростанция 3D-модель.088">
+			<mesh_name>guid://0c59320e6ed376fd534dda21d8b02eb6c8bcf106</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="427903769" immovable="1" name="Гидростанция 3D-модель.089">
+			<mesh_name>guid://fc82401c160be99dad103fc5adfcbe563fa594ad</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1633466788" immovable="1" name="Гидростанция 3D-модель.090">
+			<mesh_name>guid://0c8e71f05dab779b9866b23b2bc9e42cf5f96e28</mesh_name>
+			<surface name="Металл " intersection="1" material="5b3a9aa0d05437ba6cae022b37f3de9490425ed8"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1092597939" immovable="1" name="Гидростанция 3D-модель.091">
+			<mesh_name>guid://f43722ae5080d7de67a7987fc70acce6dde57b67</mesh_name>
+			<surface name="панель манометра" intersection="1" material="d5c7d3caf3e6e9e8360b956db9c9c1a8c9b8d2c2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="941467254" immovable="1" name="Гидростанция 3D-модель.092">
+			<mesh_name>guid://ca6f50a2f36fbd8f1692f3e53cd4dbb0fd50419a</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="667511645" immovable="1" name="Гидростанция 3D-модель.093">
+			<mesh_name>guid://c68403906c5dbbb6cc430bc9342b96667bafa431</mesh_name>
+			<surface name="Приборка" intersection="1" material="398fb20c4b5553bb1a1c8667dfd8245d66810344"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2122675480" immovable="1" name="Гидростанция 3D-модель.094">
+			<mesh_name>guid://aa064aa48f625bc02d30999f7c1a2330888ecfdc</mesh_name>
+			<surface name="Приборка" intersection="1" material="398fb20c4b5553bb1a1c8667dfd8245d66810344"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1161131415" immovable="1" name="Гидростанция 3D-модель.095">
+			<mesh_name>guid://a2b36b4229cd39191afdfc238d94735c5efd298b</mesh_name>
+			<surface name="Черный Металл" intersection="1" material="6bf4c2ea8b6f0af8be3a240ddb60e003b471c9e2"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="146740746" immovable="1" name="Гидростанция 3D-модель.096">
+			<mesh_name>guid://da813076bb013ee8989121e94e4c5576fc6a716e</mesh_name>
+			<surface name="горизонт. часть стола (рабоч" intersection="1" material="f8edf62c2f2855afce3e7607a2152283c26ba764"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2011500001" immovable="1" name="Гидростанция 3D-модель.097">
+			<mesh_name>guid://b15a16449fb6a366b3d5900dc01493258ac689f5</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1905348044" immovable="1" name="Гидростанция 3D-модель.098">
+			<mesh_name>guid://39f9469818ebd5b0fadd2f43cd2f3866dc6892d0</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2126196411" immovable="1" name="Гидростанция 3D-модель.100">
+			<mesh_name>guid://30ba1516dcd7b37808b6520783767fff6e8d47ef</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1355928798" immovable="1" name="Гидростанция 3D-модель.101">
+			<mesh_name>guid://c438658ad9d1ca58a661282d32294f1a2a9bd482</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="999634597" immovable="1" name="Гидростанция 3D-модель.102">
+			<mesh_name>guid://279aec385d0a9dfb8102d091608e6aab3db689f9</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="216364992" immovable="1" name="Гидростанция 3D-модель.103">
+			<mesh_name>guid://7ac319cce6421ab0e56ad727d14c2a4e92fe2b04</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="59541535" immovable="1" name="Гидростанция 3D-модель.104">
+			<mesh_name>guid://199eb42a559dabf7e93b3e2b1879117d2bdeba93</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="869611250" immovable="1" name="Гидростанция 3D-модель.105">
+			<mesh_name>guid://4dafc3deeac744d488200ab1ff6165c16d6ffed6</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="801712553" immovable="1" name="Гидростанция 3D-модель.106">
+			<mesh_name>guid://8f5c396ca78113dbb9ae1155c2a652d34d8e283d</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1639999220" immovable="1" name="Гидростанция 3D-модель.107">
+			<mesh_name>guid://4812b8401eb6e33a66f6354baf071ecbbea44c78</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1779262915" immovable="1" name="Гидростанция 3D-модель.108">
+			<mesh_name>guid://7dc61c7e164f0c822959a48f925e3b57d8f6a577</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1706283078" immovable="1" name="Гидростанция 3D-модель.109">
+			<mesh_name>guid://f0075f72e6e10e7e58b30d757d42e99eaf81c46a</mesh_name>
+			<surface name="крышка двигателя" intersection="1" material="8489961e86302bedb606cbf172269dbb2287c116"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1650617069" immovable="1" name="Гидростанция 3D-модель.110">
+			<mesh_name>guid://f3a6f1e0fe7f23fb3666d6590a40548d08a228c1</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1663946600" immovable="1" name="Гидростанция 3D-модель.111">
+			<mesh_name>guid://b99e55f4ec271970e51e2daf19f590e143c0eb2c</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1200483239" immovable="1" name="Гидростанция 3D-модель.112">
+			<mesh_name>guid://c13a62127ec787a19be4a933df3096f5823a6c9b</mesh_name>
+			<surface name="электродвигатель" intersection="1" material="62807ab6965b2db9fe087b295123e622cc32ebae"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1842836698" immovable="1" name="Гидростанция 3D-модель.113">
+			<mesh_name>guid://6d388c469b48d54a51cbb479225322ecbbcf393e</mesh_name>
+			<surface name="Болтики" intersection="1" material="0c457cf8224971dbeb6580235c16add391fdd930"/>
+			<transform>6.25583171844 5.46902289164e-07 -5.46902200062e-07 0.0 5.46902289164e-07 -1.01920430692e-06 6.25583171844 0.0 5.46902200062e-07 -6.25583171844 -1.01920435474e-06 0.0 -2.94086555888 0.97884701212 0.0301637153546 1.0</transform>
+		</node>
+	</node>
+</nodes>

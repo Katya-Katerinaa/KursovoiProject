@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="bf7e36f723eebc06ed2b03051d4f532f5ed9662b" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<parameter name="albedo_color" expression="0">0.21960786 0.21960786 0.21960786 1</parameter>
+	<parameter name="specular" expression="0">0.466320008</parameter>
+</material>

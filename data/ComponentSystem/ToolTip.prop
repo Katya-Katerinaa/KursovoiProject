@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="ToolTip" manual="1" parent_name="node_base">
+	<parameter name="Name" type="string"/>
+	<parameter name="Description" type="string"/>
+	<parameter name="Sprite" type="file"/>
+	<parameter name="BackgroundColor" type="string">#B4C3D4</parameter>
+</property>

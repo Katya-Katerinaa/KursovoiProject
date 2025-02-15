@@ -1,0 +1,356 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.Controls.#ctor(int)">
+			<summary>
+			Creates a smart pointer to Controls.
+			</summary> 
+			<param name="type"> Type of the controls to be created. </param> 
+		</member>
+		<member name="M:Unigine.Controls.setState(int,int)">
+			<summary>
+			Toggles the state of the given control on or off.
+			</summary> 
+			<param name="state"> Control state number to update. Possible values are in range [STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration. </param>
+			<param name="value"> State value: positive value to "press" the control; 0 to release it. </param> 
+		</member>
+		<member name="M:Unigine.Controls.getState(int) const">
+			<summary>
+			Returns the state of a given control (pressed or unpressed).
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration. </param> 
+			<returns>1 if the control is pressed; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Controls.getStateByName(char) const">
+			<summary>
+			Returns the state of a given control (pressed or unpressed) by the control state name.
+			</summary> 
+			<param name="name"> Name of the control state. For full list of available controls see Unigine::Controls:: Enumeration. </param> 
+			<returns>1 if the control is pressed; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Controls.getStateName(int) const">
+			<summary>
+			Returns the name of a given control state as a string.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration. </param> 
+			<returns>Name of the control state.</returns>
+		</member>
+		<member name="M:Unigine.Controls.clearState(int)">
+			<summary>
+			Returns a control state and clears it to 0 (not pressed). This function allows to handle control only once even if it is kept pressed over several frames.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration. </param> 
+			<returns>Returns the state of the given control: 1 if the control is pressed; otherwise,0.</returns>
+		</member>
+		<member name="M:Unigine.Controls.saveState(Unigine.Ptr{Unigine.Stream}) const">
+			<summary>
+			Saves controls settings into the stream.					Example using saveState() and restoreState() methods:
+			</summary> 
+			<param name="stream"> Stream smart pointer. </param> 
+			<returns>true if the controls settings are saved successfully; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Controls.restoreState(Unigine.Ptr{Unigine.Stream})">
+			<summary>
+			Restores controls settings from the stream.					Example using saveState() and restoreState() methods:
+			</summary> 
+			<param name="stream"> Stream smart pointer. </param> 
+			<returns>true if the controls settings are restored successfully; otherwise, false.</returns>
+		</member>
+		<member name="F:Unigine.Controls.CONTROLS_APP">
+			<summary>
+			ControlsApp instance.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.CONTROLS_DUMMY">
+			<summary>
+			ControlsDummy instance.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.NUM_STATES">
+			<summary>
+			The total number of controls states.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_FORWARD">
+			<summary>
+			A state in which the player moves forwards.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_BACKWARD">
+			<summary>
+			A state in which the player moves backwards.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_MOVE_LEFT">
+			<summary>
+			A state in which the player moves left.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_MOVE_RIGHT">
+			<summary>
+			A state in which the player moves right.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_TURN_UP">
+			<summary>
+			A state, in which the player turns upward.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_TURN_DOWN">
+			<summary>
+			A state in which the player turns downward.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_TURN_LEFT">
+			<summary>
+			A state in which the player turns left.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_TURN_RIGHT">
+			<summary>
+			A state in which the player turns right.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_CROUCH">
+			<summary>
+			A state in which the player crouches or squats.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_JUMP">
+			<summary>
+			A state in which the player jumps.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_RUN">
+			<summary>
+			A state in which the player runs.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_USE">
+			<summary>
+			A state in which the player utilizes some object.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_FIRE">
+			<summary>
+			A state in which the player fires their weapon.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_SAVE">
+			<summary>
+			A state in which the world is being saved.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_RESTORE">
+			<summary>
+			A state in which the world is being restored.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_SCREENSHOT">
+			<summary>
+			A state in which a screenshot is being taken.
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_0">
+			<summary>
+			Auxiliary state (unreserved) It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_1">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_2">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_3">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_4">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_5">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_6">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_7">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_8">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_9">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_A">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_B">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_C">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_D">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_E">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="F:Unigine.Controls.STATE_AUX_F">
+			<summary>
+			Auxiliary state (unreserved). It can be mapped to any control state, if necessary (see the example).
+		</summary>
+		</member>
+		<member name="M:Unigine.ControlsApp.setState(int,int)">
+			<summary>
+			Updates the state of a given control (sets the control on or off).
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param>
+			<param name="value"> State value: positive value to "press" the control; 0 to release it. </param> 
+		</member>
+		<member name="M:Unigine.ControlsApp.getState(int)">
+			<summary>
+			Returns the state of a given control.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>State value: positive value means the control is "pressed"; 0 means the control is released.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.setStateMouseButton(int,Input::MOUSE_BUTTON)">
+			<summary>
+			Sets a mouse button that switches a given state on and off.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param>
+			<param name="button"> Button that toggles the state, one of the preset MOUSE_BUTTON_ codes. </param> 
+		</member>
+		<member name="M:Unigine.ControlsApp.getStateMouseButton(int)">
+			<summary>
+			Returns a mouse button that switches a given state on and off.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>Button that toggles the state, one of the preset MOUSE_BUTTON_ codes.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.isStateMouseButton(Input::MOUSE_BUTTON)">
+			<summary>
+			Returns a value indicating if the given button assigned to the state.
+			</summary> 
+			<param name="button"> Button that toggles the state, one of the preset MOUSE_BUTTON_ codes. </param> 
+			<returns>1 if the given button is assigned; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.getStateEvent(int)">
+			<summary>
+			Lets the user assign a key or a mouse button to a given state.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+		</member>
+		<member name="M:Unigine.ControlsApp.isStateEvent">
+			<summary>
+			Returns a value indicating if a key or a mouse button is successfully assigned to a state.
+			</summary>  
+			<returns>1 if a key or a mouse button is already assigned; otherwise, 0. </returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.setStateKey(int,Input::KEY)">
+			<summary>
+			Sets a key that toggles a given state on and off.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param>
+			<param name="key"> Key that switches the state, one of the preset KEY_ codes. </param> 
+		</member>
+		<member name="M:Unigine.ControlsApp.getStateKey(int)">
+			<summary>
+			Returns a key that toggles a given state on and off.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>Key that switches the state, one of the preset KEY_ codes.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.isStateKey(Input::KEY)">
+			<summary>
+			Checks if a given key already acts as an application control. This is useful to avoid collisions between application controls and hot keys.
+			</summary> 
+			<param name="key"> Key that switches the state, one of the preset KEY_ codes. </param> 
+			<returns>1 if the key is assigned to a state; otherwise, 0. </returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.getStateName(int)">
+			<summary>
+			Returns the name of the given control state.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>Name of the given control state.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.getStateInfo(int) const">
+			<summary>
+			Returns the information about the given control state.
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>String containing information about the given control state.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.clearState(int)">
+			<summary>
+			Returns a control state and clears it to 0 (control is not pressed).
+			</summary> 
+			<param name="state"> Control state number. Possible values are in range [ STATE_FORWARD;NUM_STATES]. For full list of available controls see Unigine::Controls:: Enumeration at the end of the article. </param> 
+			<returns>1 if the control is pressed; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.setRemoveGrabKey(Input::KEY)">
+			<summary>
+			Sets a new key to be used to switch off the grab mode of the mouse pointer (mouse pointer is bound to the application window). See this example for more information on mouse pointer modes and customization.
+			</summary> 
+			<param name="key"> Key to be used to switch off the grab mode of the mouse pointer, one of the preset KEY_ codes. </param> 
+		</member>
+		<member name="M:Unigine.ControlsApp.getRemoveGrabKey const">
+			<summary>
+			Returns the key currently used to switch off the grab mode of the mouse pointer (mouse pointer is bound to the application window). See this example for more information on mouse pointer modes and customization.
+			</summary>  
+			<returns>Key used to switch off the grab mode of the mouse pointer, one of the preset KEY_ codes.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.load">
+			<summary>
+			Loads controls configuration settings from a controls configuration file (configs/default.controls by default). To change the path to the controls configuration file use the setPath() method.
+			</summary>  
+			<returns>1 if controls configuration settings are successfully loaded from a file; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.ControlsApp.save const">
+			<summary>
+			Saves controls configuration settings to a controls configuration file (configs/default.controls by default). To change the path to the controls configuration file use the setPath() method.
+			</summary>  
+			<returns>1 if controls configuration settings are successfully saved to a file; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.ControlsDummy.#ctor">
+			<summary>
+			Constructor. Creates a new set of dummy controls.
+			</summary>  
+		</member>
+	</members>
+</doc>

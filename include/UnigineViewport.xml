@@ -1,0 +1,303 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.Viewport.#ctor">
+			<summary>
+			Creates a new viewport with default settings.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Viewport.appendSkipFlags(int)">
+			<summary>
+			Appends specified skip flags to the list of currently used ones.
+			</summary> 
+			<param name="flags"> Skip flags to append. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.checkSkipFlags(int)">
+			<summary>
+			Returns a value indicating if the specified skip flags are set for the current viewport.
+			</summary> 
+			<param name="flags"> Skip flags to check. </param> 
+			<returns>1 if the skip flags are set; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Viewport.removeSkipFlags(int)">
+			<summary>
+			Removes specified skip flags from the list of currently used ones.
+			</summary> 
+			<param name="flags"> Skip flags to remove. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.render(Unigine.Ptr{Unigine.Camera})">
+			<summary>
+								Renders an image from the specified camera. This method is used to integrate the engine to a 3rd party renderer.					To render an image from the camera to the RenderTarget interface, do the following:
+			</summary> 
+			<param name="camera"> Camera an image from which should be rendered. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.render(Unigine.Ptr{Unigine.Camera},int,int)">
+			<summary>
+			Renders an image of the specified size from the specified camera to the current rendering target.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="width"> Image width, in pixels. </param>
+			<param name="height"> Image height, in pixels. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderEngine(Unigine.Ptr{Unigine.Camera})">
+			<summary>
+			Renders an Engine viewport for the specified camera to the current rendering target. This method renders a splash screen and provides an image in accordance with panoramic and stereo rendering settings.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Texture})">
+			<summary>
+			Renders an image from the camera to the specified 2D texture.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Texture},int,int,bool)">
+			<summary>
+			Renders an image of the specified size from the camera to a 2D texture.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param>
+			<param name="width"> Texture width, in pixels. </param>
+			<param name="height"> Texture height, in pixels. </param>
+			<param name="hdr"> HDR flag.This parameter determines the format of the 2D texture:1 - texture format will be set to RGBA16F0 - texture format will be set to RGBA8 </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderTextureCube(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Texture},bool)">
+			<summary>
+			Renders the image from the camera to the cubemap texture.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="texture"> Target Cube texture to save the result to. </param>
+			<param name="local_space"> A flag indicating if the camera angle should be used for the cube map rendering. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderTextureCube(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Texture},int,bool,bool)">
+			<summary>
+			Renders the image from the camera to the cube map of the specified size.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="texture"> Target cube map to save the result to. </param>
+			<param name="size"> Cube map edge size. </param>
+			<param name="hdr"> HDR flag.This parameter determines the format of the 2D texture:1 - texture format will be set to RGBA16F0 - texture format will be set to RGBA8 </param>
+			<param name="local_space"> A flag indicating if the camera angle should be used for the cube map rendering. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNode(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Node})">
+			<summary>
+			Renders the given node with all children to the current rendering target.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="node"> Node to be rendered. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNode(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Node},int,int)">
+			<summary>
+			Renders the given node with all children to the current rendering target.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="node"> Node to be rendered. </param>
+			<param name="width"> Image width, in pixels. </param>
+			<param name="height"> Image height, in pixels. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodeTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Node},Unigine.Ptr{Unigine.Texture},int,int,bool)">
+			<summary>
+			Renders the given node with all children to the 2D texture of the specified size.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="node"> Pointer to the node to be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param>
+			<param name="width"> Texture width, in pixels. </param>
+			<param name="height"> Texture height, in pixels. </param>
+			<param name="hdr"> HDR flag.This parameter determines the format of the 2D texture:1 - texture format will be set to RGBA16F0 - texture format will be set to RGBA8 </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodeTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Node},Unigine.Ptr{Unigine.Texture})">
+			<summary>
+			Renders the given node with all children to the specified 2D texture.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="node"> Pointer to the node to be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodes(Unigine.Ptr{Unigine.Camera},Unigine.Vector{Unigine.Ptr{Unigine.Node},int,Unigine.VectorAllocator})">
+			<summary>
+			Renders given nodes with all their children to the current rendering target.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="nodes"> List of the nodes to be rendered. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodes(Unigine.Ptr{Unigine.Camera},Unigine.Vector{Unigine.Ptr{Unigine.Node},int,Unigine.VectorAllocator},int,int)">
+			<summary>
+			Renders given nodes with all their children to the current rendering target of the specified size.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="nodes"> List of the nodes to be rendered. </param>
+			<param name="width"> Image width, in pixels. </param>
+			<param name="height"> Image height, in pixels. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodesTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Vector{Unigine.Ptr{Unigine.Node},int,Unigine.VectorAllocator},Unigine.Ptr{Unigine.Texture},int,int,int)">
+			<summary>
+			Renders given nodes with all their children to the 2D texture of the specified size.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="nodes"> List of the nodes to be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param>
+			<param name="width"> Texture width, in pixels. </param>
+			<param name="height"> Texture height, in pixels. </param>
+			<param name="hdr"> HDR flag.This parameter determines the format of the 2D image:1 - texture format will be set to RGBA16F0 - texture format will be set to RGBA8 </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderNodesTexture2D(Unigine.Ptr{Unigine.Camera},Unigine.Vector{Unigine.Ptr{Unigine.Node},int,Unigine.VectorAllocator},Unigine.Ptr{Unigine.Texture})">
+			<summary>
+			Renders given nodes with all their children to the specified 2D texture.
+			</summary> 
+			<param name="camera"> Camera, an image from which should be rendered. </param>
+			<param name="nodes"> List of the nodes to be rendered. </param>
+			<param name="texture"> Target 2D texture to save the result to. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderStereo(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Camera},char)">
+			<summary>
+			Renders a stereo image in the current viewport.
+			</summary> 
+			<param name="camera_left"> Camera that renders an image for the left eye. </param>
+			<param name="camera_right"> Camera that renders an image for the right eye. </param>
+			<param name="stereo_material"> List of names of stereo materials to be used. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.renderStereoPeripheral(Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Camera},Unigine.Ptr{Unigine.Texture},Unigine.Ptr{Unigine.Texture},Unigine.Ptr{Unigine.Texture},Unigine.Ptr{Unigine.Texture},char)">
+			<summary>
+			Renders a stereo image for HMDs having context (peripheral) and focus displays. This method saves performance on shadows and reflections along with other optimizations reducing rendering load, such as reduced resolutions for textures.
+			</summary> 
+			<param name="camera_left"> Camera that renders an image for the left context (low-res) display. </param>
+			<param name="camera_right"> Camera that renders an image for the right context (low-res) display. </param>
+			<param name="camera_focus_left"> Camera that renders an image for the left focus (high-res) display. </param>
+			<param name="camera_focus_right"> Camera that renders an image for the right focus (high-res) display. </param>
+			<param name="texture_left"> Texture to save the image rendered for the left context (low-res) display. </param>
+			<param name="texture_right"> Texture to save the image rendered for the right context (low-res) display. </param>
+			<param name="texture_focus_left"> Texture to save the image rendered for the left focus (high-res) display. </param>
+			<param name="texture_focus_right"> Texture to save the image rendered for the right focus (high-res) display. </param>
+			<param name="stereo_material"> List of names of stereo materials to be used. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.setStereoHiddenAreaMesh(Unigine.Ptr{Unigine.Mesh},Unigine.Ptr{Unigine.Mesh})">
+			<summary>
+			Sets custom meshes to be used for culling pixels, that are not visible in VR.					Requires render_stereo_hidden_area = 2
+			</summary> 
+			<param name="hidden_area_mesh_left"> Mesh representing hidden area for the left eye. </param>
+			<param name="hidden_area_mesh_right"> Mesh representing hidden area for the right eye. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.clearStereoHiddenAreaMesh">
+			<summary>
+			Clears meshes that represent hidden areas for both, left and right eye. Hidden areas are used for culling pixels, that are not visible in VR
+			</summary>  
+		</member>
+		<member name="M:Unigine.Viewport.setEnvironmentTexturePath(char)">
+			<summary>
+			Sets the path to the cubemap defining the environment color for the viewport. This texture is used for imitating landscape reflections and lighting in accordance with the ground mask.
+			</summary> 
+			<param name="name"> Path to the cubemap defining the environment color. </param> 
+		</member>
+		<member name="M:Unigine.Viewport.getEnvironmentTexturePath">
+			<summary>
+			Returns the path to the cubemap defining the environment color set for the viewport. This texture is used for imitating landscape reflections and lighting in accordance with the ground mask.
+			</summary>  
+			<returns>Path to the cubemap defining the environment color.</returns>
+		</member>
+		<member name="M:Unigine.Viewport.resetEnvironmentTexture">
+			<summary>
+			Resets the current environment texture to the default one.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Viewport.renderVREngine">
+			<summary>
+			Renders the VR viewport if VR is enabled, taking into account the vr mirror mode set.
+			</summary>  
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_SHADOWS">
+			<summary>
+			Skip shadows rendering in the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_VISUALIZER">
+			<summary>
+			Skip rendering of the visualizer in the viewport. This flag is set by default for a new viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_POSTEFFECTS">
+			<summary>
+			Skip rendering of post effects in the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_DYNAMIC_REFLECTIONS">
+			<summary>
+			Skip rendering of dynamic reflections in the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_VELOCITY_BUFFER">
+			<summary>
+			Skip rendering to the velocity buffer for the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_SRGB">
+			<summary>
+			Skip rendering of the srgb color space.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_FORMAT_RG11B10">
+			<summary>
+			Skip rendering of RG11B10 formats in the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_TRANSPARENT">
+			<summary>
+			Skip rendering of transparent objects in the viewport.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_STREAMING">
+			<summary>
+			Disables data streaming in the process of rendering.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_AUTO_EXPOSURE">
+			<summary>
+			Disables auto exposure in the process of rendering.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.SKIP_AUTO_WHITE_BALANCE">
+			<summary>
+			Disables auto white balance in the process of rendering.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.USAGE_WORLD_LIGHT">
+			<summary>
+			Use lighting from the LightWorld set in the current loaded world.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.USAGE_AUX_LIGHT">
+			<summary>
+			Use lighting from the auxiliary virtual scene containing one LightWorld (with 45, 45 and 45 degrees slope angles), scattering is not used.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.USAGE_NODE_LIGHT">
+			<summary>
+			Use the node lighting.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.RENDER_DEPTH">
+			<summary>
+			Render only depth.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.RENDER_DEPTH_GBUFFER">
+			<summary>
+			Render only depth and Gbuffer.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.RENDER_DEPTH_GBUFFER_FINAL">
+			<summary>
+			Render depth, Gbuffer and final image.
+		</summary>
+		</member>
+		<member name="F:Unigine.Viewport.RENDER_REPROJECTION">
+			<summary>
+			Render stereo reprojection for VR.
+		</summary>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<doc>
+	<assembly>
+		<name>Unigine</name>
+	</assembly>
+	<members>
+		<member name="M:Unigine.Materials.loadMaterial(char)">
+			<summary>
+			Loads a material stored by the given path. The function can be used to load materials created during application execution or stored outside the data directory.
+			</summary> 
+			<param name="path"> A path to the material (including its name). </param> 
+			<returns>A loaded material.</returns>
+		</member>
+		<member name="M:Unigine.Materials.isMaterialGUID(Unigine.UGUID) const">
+			<summary>
+			Returns a value indicating if a material with the specified GUID exists.
+			</summary> 
+			<param name="guid"> A material GUID. </param> 
+			<returns>true if the material with the specified GUID exists; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Materials.getMaterial(int) const">
+			<summary>
+			Returns the material by its number.
+			</summary> 
+			<param name="num"> Material number. </param> 
+			<returns>A material.</returns>
+		</member>
+		<member name="M:Unigine.Materials.findManualMaterial(char) const">
+			<summary>
+			Searches for a manual material by the given name.
+			</summary> 
+			<param name="name"> A manual material name. </param> 
+			<returns>A manual material smart pointer.</returns>
+		</member>
+		<member name="M:Unigine.Materials.findMaterialByGUID(Unigine.UGUID) const">
+			<summary>
+			Searches for a material with the given GUID.
+			</summary> 
+			<param name="guid"> A material GUID. </param> 
+			<returns>A material smart pointer.</returns>
+		</member>
+		<member name="M:Unigine.Materials.findMaterialByFileGUID(Unigine.UGUID) const">
+			<summary>
+			Searches for a material with the given GUID of a material file.
+			</summary> 
+			<param name="guid"> A GUID of a material file. </param> 
+			<returns>A material smart pointer.</returns>
+		</member>
+		<member name="M:Unigine.Materials.findMaterialByPath(char) const">
+			<summary>
+			Searches for a material stored by the specified path.
+			</summary> 
+			<param name="path"> A loading path of the material (including a material's name). </param> 
+			<returns>A material smart pointer.</returns>
+		</member>
+		<member name="M:Unigine.Materials.setCachedMaterial(Unigine.Ptr{Unigine.Material})">
+			<summary>
+								Sets the material to be modified in runtime. This method is used together with setCachedState and getCachedMaterial() to change the material state in runtime without the necessity to recalculate the materials every frame and recompile the shaders. Using these methods is highly recommended if the material states are changed almost every frame or several times per frame.										Let's review an example use case that can make use of these methods. Assume that you have a performance-consuming material and you want to reduce its quality when it's rendered in reflections. The following pseudo code demonstrates the approach to using these methods:
+			</summary> 
+			<param name="mat"> The material to be modified in runtime. </param> 
+		</member>
+		<member name="M:Unigine.Materials.getCachedMaterial">
+			<summary>
+								Returns the material modified in runtime. This method is used together with setCachedMaterial() and setCachedState to change the material state in runtime without the necessity to recalculate the materials every frame and recompile the shaders. Using these methods is highly recommended if the material states are changed almost every frame or several times per frame.										Let's review an example use case that can make use of these methods. Assume that you have a performance-consuming material and you want to reduce its quality when it's rendered in reflections. The following pseudo code demonstrates the approach to using these methods:
+			</summary>  
+			<returns>The material modified in runtime.</returns>
+		</member>
+		<member name="M:Unigine.Materials.setCachedState(char,int)">
+			<summary>
+								Sets the target state for the material to modify it in runtime. This method is used together with setCachedMaterial() and getCachedMaterial() to change the material state in runtime without the necessity to recalculate the materials every frame and recompile the shaders. Using these methods is highly recommended if the material states are changed almost every frame or several times per frame.										Let's review an example use case that can make use of these methods. Assume that you have a performance-consuming material and you want to reduce its quality when it's rendered in reflections. The following pseudo code demonstrates the approach to using these methods:
+			</summary> 
+			<param name="name"> The name of the state to be changed. </param>
+			<param name="value"> The target state value. </param> 
+		</member>
+		<member name="M:Unigine.Materials.removeMaterial(Unigine.UGUID,bool,bool)">
+			<summary>
+			Deletes a material. If the remove_file flag is enabled, the material file will be deleted as well. If the flag is disabled, the deleted material will be loaded again on the next application start-up. If the remove_children flag is enabled, all the children of the material will be deleted as well.
+			</summary> 
+			<param name="guid"> GUID of the material to be removed. </param>
+			<param name="remove_file"> Flag indicating if the material file will be deleted. </param>
+			<param name="remove_children"> Flag indicating if all the children of the material will be also deleted. </param> 
+			<returns>1 if the material is deleted successfully; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Materials.replaceMaterial(Unigine.Ptr{Unigine.Material},Unigine.Ptr{Unigine.Material})">
+			<summary>
+			Replaces the material with the given one.
+			</summary> 
+			<param name="material"> A material to be replaced. </param>
+			<param name="new_material"> A replacing material. </param> 
+			<returns>1 if the material is replaced successfully; otherwise, 0.</returns>
+		</member>
+		<member name="M:Unigine.Materials.saveMaterials const">
+			<summary>
+			Saves changes made for all loaded materials.
+			</summary>  
+			<returns>true if materials are saved successfully; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Materials.reloadMaterials">
+			<summary>
+			Reloads all loaded materials.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.destroyShaders">
+			<summary>
+			Deletes all shaders used for the loaded materials.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.destroyTextures">
+			<summary>
+			Deletes all textures used by the loaded materials.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.createShaders">
+			<summary>
+			Creates all shaders for all loaded materials.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.createRenderMaterials">
+			<summary>
+			Creates render materials (internal materials required for rendering). For example, you can create all necessary render materials during initialization to avoid spikes that may occur later.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.createShaderCache">
+			<summary>
+			Creates shader cache for all loaded materials.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.createShadersFromCache">
+			<summary>
+			Compiles the shaders available in the shader cache.
+			</summary>  
+		</member>
+		<member name="M:Unigine.Materials.isShadersCompiling const">
+			<summary>
+			Returns a value indicating if asynchronous compilation is being performed.
+			</summary>  
+			<returns>true if asynchronous compilation is being performed; otherwise, false.</returns>
+		</member>
+		<member name="M:Unigine.Materials.flushShadersCompiling">
+			<summary>
+			Force-compiles all shaders that are queued for the asynchronous compilation.
+			</summary>  
+		</member>
+	</members>
+</doc>
