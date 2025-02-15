@@ -644,6 +644,7 @@
 	"ca5e0347d5bd0a9e12c8c1ef9fdab552d4236426": "shader_d3d12_dxc.cache",
 	"8f56d0dadeb624b0525d4afe39409d18aadc472e": "unigine.cache",
 	"eee0ada345b312282f9b81cb83338b57f3db4012": "editor.cache",
+	"7036425777e8051452f506a5f41a9656ce8a993e": "d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache",
 	"6778ad932b816313e11867bb3990f4a1986c7842": "core/locale/unigine.locale",
 	"50c21bb9841b8ffa1ed4f3a186a893b07094b090": "core/import/xatlas/README",
 	"4934c5a936126aec272a876355c598022fd8c470": "bake_lighting/shadows/4934c5a936126aec272a876355c598022fd8c470.texture",
