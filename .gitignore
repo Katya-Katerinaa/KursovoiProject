@@ -12,6 +12,7 @@
 *.VC.opendb
 *.sdf
 .thumbnails/
+*.gpu_cache
 
 # User-specific files
 *.rsuser
@@ -371,6 +372,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-data/d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache
-data/d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache
